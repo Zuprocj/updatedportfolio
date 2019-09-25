@@ -9,40 +9,54 @@
 
   <title>Bootstrap Basic Portfolio</title>
 
-  <!-- Boostrap Stylesheet -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
-  <!-- Our own CSS stylesheet -->
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
 
 </head>
 
 <body>
   <div class="container-fluid">
+      <div class="row">
+          <div class="col-xs-12 col-sm-5 col-lg-5">
+              <div class="fill">
+                  <img src="./assets/images/profilepic.jpg" alt="profilepic"/>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-7 col-lg-7">
+            <ul id="links">
+              <li>Profile</li>
+              <li>Resume</li>
+              <li>Portfolio</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+  </div>
+  </div>
+
+  <div class="container-fluid">
         <div class="header text-center"><h2>Profile</h2>
           <h6>a brief about me</h6>
         </div>
       </div>
-
+<div class="container-fluid">
       <section class="content border-bottom padding-block">
         <div id="aboutMe">
       <div class="row">
         <div class="col-xs-12 col-sm-12 col-lg-7">
           <h3>Hello, I am a full-stack developer</h3>
-          <p>I am a current student at the uw coding bootcamp. I have held many jobs under the sun.  My first job was at Fry's Electronics as a merchandiser 
+          <p>I am a current student at the UW coding bootcamp. I have always been interested in computers and coding. I remember growing up, I would spend countless hours on Myspace 
+            and Geocities inspecting html code and seeing if i can tweak it on my own page. 
+            <br>I have held many jobs under the sun.My first job was at Fry's Electronics as a merchandiser 
             then worked my way up into a recieveing supervisor. Then I held a job in logistics for Macy's. After that I worked at a preschool
             as a teacher's assistant/gym teacher/art teacher. After that I worked at UPS at Boeing Field and now currently working at Harborview Medical center 
             as a Hospital Assitant.
-            </p>
-            <br>
-            <p>about time to think about a career. Nursing doesn't really call to me. I have always been intrested in computers and it has always been a hobby 
-              of mine. building computers and gaming.
+          
             </p>
               </div>
               <div class="col-xs col-sm col-lg-5">
-                <div class="grayBlock">
+                <div class="grayBlock fill">
                 <table style="width:100%">
                   <tr>
                     <td class="font-weight-m">Name:</td>
@@ -66,6 +80,8 @@
               </div>
             </div>
             </section>
+          </div>
+          <div class="container-fluid">
               <section class="content border-bottom padding-block">
               <div id="resume">
                   <div class="header text-center"><h2>Resume</h2></div>
@@ -73,7 +89,7 @@
                       <div class="col-xs-12 col-sm-12 col-lg-5">
                       
                           <h3>Education</h3>
-                        <div class="grayBlock">
+                        <div class="grayBlock fill">
                         <p>I am a current student at the UW coding bootcamp.
                         <br>Gradutated from seattle Prep 2003
                         </p>
@@ -83,13 +99,13 @@
                       
                       <div class="col-xs col-sm col-lg-7">
                           <h3>Work Experience</h3>
-                        <div class="grayBlock">
+                        <div class="grayBlock fill">
                             <table style="width:100%">
                                 
                                 
                                                 <tr>
                                                     <td class="font-weight-m">Fry's Electronics</td>
-                                                  <td>Merchandiser, Supervisor</td>
+                                                  <td>Software Merchandiser, Audio-Visual Assistant Supervisor, Appliance and Telecom Supervisor</td>
                                                 </tr>
                                                 <tr>
                                                     <td class="font-weight-m">Macy's Logistics</td>
@@ -101,7 +117,7 @@
                                                   </tr>
                                                   <tr>
                                                       <td class="font-weight-m">United Parcel Service (UPS)</td>
-                                                      <td>Teacher's Assistant</td>
+                                                      <td>Package Handler</td>
                                                     </tr>
                                                     <tr>
                                                         <td class="font-weight-m">Harborview Medical Center</td>
@@ -114,7 +130,9 @@
            
             </div>  
           </section>
+        </div>
           
+        <div class="container-fluid">
           <section class="content border-bottom padding-block">
             <div id="portfolio">
                 
@@ -142,6 +160,34 @@
                   
                 </section>
                 </div>
+
+                <div class="container-fluid">
+                    <section class="row">
+                        <div class="col-xs col-sm">>
+                        <form class="block form-horizontal">
+                          <h1 class="block-header">Contact</h1> 
+                          <div class="form-group">
+                            <label for="name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-xs col-sm">
+                              <input type="email" class="form-control" id="name" placeholder="Name">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="email" class="col-sm-2 control-label">Email</label>
+                            <div class="col-xs col-sm">
+                              <input type="password" class="form-control" id="email" placeholder="Email">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label class="col-sm-2 control-label" for="msg">Message</label>
+                            <div class="col-xs col-sm">
+                              <textarea id="msg" class="form-control" rows="3" placeholder="Message"></textarea>
+                            </div>
+                          </div>
+                          <button class="submit-btn">Submit</button>
+                        </form>
+                      </div>
+                    </div>
                
    
  

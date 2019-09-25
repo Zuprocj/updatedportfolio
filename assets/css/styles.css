@@ -9,6 +9,23 @@ body {
   padding: 50px;
 }
 
+.black {
+  background-color: black;
+  color: blue;
+}
+
+.fill {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.fill img {
+  flex-shrink: 0;
+  max-width: 50%;
+  max-height: 50%
+}
+
 .border-bottom {
   border-bottom: 10px solid;
 }
@@ -45,4 +62,8 @@ body {
 
 .font-weight-m{
   font-weight: 500;
+}
+
+#links {
+  font-size: x-large;
 }
