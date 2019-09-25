@@ -1,0 +1,48 @@
+html,
+body { height: 100%; 
+  width: 100%;
+}
+
+body {
+  display: table;
+  width: 100%;
+  padding: 50px;
+}
+
+.border-bottom {
+  border-bottom: 10px solid;
+}
+
+.padding-block {
+  padding-bottom: 15px
+}
+.content {
+  padding: 48px 0px
+}
+
+.header {
+  padding: 30px 0px;
+  
+}
+.grayBlock {
+  padding: 30px;
+  border-style: solid;
+  border-width: 1px;
+  background: #F8F8F8;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.font-weight-m{
+  font-weight: 500;
+}
