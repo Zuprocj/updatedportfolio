@@ -3,12 +3,9 @@ body { height: 100%;
   width: 100%;
 }
 
-body {
-  display: table;
-  width: 100%;
+ul {
+  padding: 20px 10px;
 }
-
-
 .text-right{
   text-align: right;
 }
@@ -68,8 +65,13 @@ body {
   font-weight: 500;
 }
 
+.splash {
+  background-color: #333;
+}
 #links {
   font-size: xx-large;
+  background-color: #333;
+  color: white;
 }
 
 .imgPort {
@@ -82,7 +84,7 @@ body {
 #navbar {
   background-color: #333; 
   position: fixed;
-  top: -50px; 
+  top: -200px; 
   width: 100%; 
   transition: top 0.3s; 
   z-index: 9999;
