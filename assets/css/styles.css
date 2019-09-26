@@ -132,3 +132,16 @@ body {
   height: 32px;
   width: 32px;
 }
+
+#aboutMe {
+  padding: 25px 0px;
+}
+#resume {
+  padding: 25px 0px;
+}
+#portfolio {
+  padding: 25px 0px;
+}
+#contact {
+  padding: 25px 0px;
+}
