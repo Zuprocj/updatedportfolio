@@ -20,13 +20,21 @@
 
 <!-- nav bar -->
     <div id="navbar">
+        <div class="row">
+            <div class="col-xs-12 col-sm-5 col-lg-5">
         <a href="#splash">Home</a>
         <a href="#aboutMe">Profile</a>
         <a href="#resume">Resume</a>
         <a href="#contact">Contact</a>
       </div>
+        <div class="col-xs-12 col-sm-7 col-lg-7">
+        <a href="https://github.com/Zuprocj"><img id="proIcon" src="./assets/icons/svg/github.svg"></a>
+        <a href="https://www.linkedin.com/in/jeff-corpuz-343963185/"><img id="proIcon" src="./assets/icons/svg/linkedin.svg"></a>
+      </div>
+        </div>
+    </div>
   <!-- splash -->
-<div class="container-fluid">
+<div class="container-fluid border-bottom">
   <div class="row">
     <div class="col-xs-12 col-sm-5 col-lg-5">
       <div class="fill">
@@ -35,17 +43,19 @@
     </div>
     <div class="col-xs-12 col-sm-7 col-lg-7">
       <ul id="links">
-        <li style="list-style-type: none;"><a href="#aboutMe"><img id="proIcon" src="./assets/open-iconic-master/svg/person.svg">Profile</a><br></li>
-        <li style="list-style-type: none;"><a href="#resume"><img id="resIcon" src="./assets/open-iconic-master/svg/document.svg">Resume</a><br></li>
-        <li style="list-style-type: none;"><a href="#portfolio"><img id="folIcon" src="./assets/open-iconic-master/svg/folder.svg">Portfolio</a><br></li>
-        <li style="list-style-type: none;"><a href="#contact"><img id="conIcon" src="./assets/open-iconic-master/svg/inbox.svg">Contact</a><br></li>
+        <li style="list-style-type: none;"><a href="#aboutMe"><img id="proIcon" src="./assets/icons/svg/person.svg">Profile</a><br></li>
+        <li style="list-style-type: none;"><a href="#resume"><img id="resIcon" src="./assets/icons/svg/document.svg">Resume</a><br></li>
+        <li style="list-style-type: none;"><a href="#portfolio"><img id="folIcon" src="./assets/icons/svg/folder.svg">Portfolio</a><br></li>
+        <li style="list-style-type: none;"><a href="#contact"><img id="conIcon" src="./assets/icons/svg/inbox.svg">Contact</a><br></li>
+        <a href="https://github.com/Zuprocj"><img id="gitIcon" src="./assets/icons/svg/github.svg"></a>
+        <a href="https://www.linkedin.com/in/jeff-corpuz-343963185/"><img id="linkIcon" src="./assets/icons/svg/linkedin.svg"></a>
       </ul>
     </div>
   </div>
 </div>
 <!-- profile header -->
 <div class="container-fluid">
-  <div class="header text-center"><h2>Profile</h2>
+  <div class="header text-center border-bottom"><h2>Profile</h2>
       <h6>a brief about me</h6>
   </div>
 </div>
@@ -93,9 +103,9 @@
 <div class="container-fluid">
   <section class="content border-bottom padding-block">
     <div id="resume">
-      <div class="header text-center">
+      <div class="header text-center border-bottom">
         <h2>Resume</h2>
-        <a href="./assets/images/Resume.docx"  target="_blank" class="d-block">
+        <a href="./assets/images/Resume.pdf"  target="_blank" class="d-block">
         <h6>Download Full Resume click here</h6></a>
     </div>
 <!-- short resume -->
@@ -142,7 +152,7 @@
 <div class="container-fluid">
   <section class="content border-bottom padding-block">
     <div id="portfolio">
-      <div class="header text-center">
+      <div class="header text-center border-bottom">
         <h2>Portfolio</h2>
       </div>
 <!-- portfolio links/pics -->
@@ -178,7 +188,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col-xs col-sm">
-      <div class="header text-center">
+      <div class="header text-center border-bottom">
         <div id="contact">
         <h2>Contact</h2>
         </div>
@@ -202,43 +212,12 @@
     </div>
   </div>
 </div>
+</div>
 
 </body>
 <script type="text/javascript" src="./assets/logic.js"></script>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-<script>
-var config = {
-  apiKey: "AIzaSyCaqgVdaG2HOQB-uQZsuzVyPhRt6NywhMk",
-  authDomain: "contact-7bdbb.firebaseapp.com",
-  databaseURL: "https://contact-7bdbb.firebaseio.com",
-  projectId: "contact-7bdbb",
-  storageBucket: "",
-};
 
-firebase.initializeApp(config);
-
-var dataRef = firebase.database();
-
-var name = "";
-var email = "";
-var message = "";
-
-$("#submit").on("click", function(event) {
-
-  event.preventDefault();
-
-  name = $("#name-input").val().trim();
-  email = $("#email-input").val().trim();
-  message = $("#message-input").val().trim();
-
-  dataRef.ref().push({
-      name: name,
-      email: email,
-      messaget: message,
-      dateAdded: firebase.database.ServerValue.TIMESTAMP
-  });
-});
-</script>
 </html>

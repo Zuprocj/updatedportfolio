@@ -6,7 +6,6 @@ body { height: 100%;
 body {
   display: table;
   width: 100%;
-  padding: 50px;
 }
 
 
@@ -39,7 +38,7 @@ body {
   padding-bottom: 15px
 }
 .content {
-  padding: 48px 0px
+  padding: 48px 15px
 }
 
 .header {
@@ -81,15 +80,15 @@ body {
 }
 
 #navbar {
-  background-color: #333; /* Black background color */
-  position: fixed; /* Make it stick/fixed */
-  top: -75px; /* Hide the navbar 50 px outside of the top view */
-  width: 100%; /* Full width */
-  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  background-color: #333; 
+  position: fixed;
+  top: -50px; 
+  width: 100%; 
+  transition: top 0.3s; 
   z-index: 9999;
 }
 
-/* Style the navbar links */
+
 #navbar a {
   float: left;
   display: block;
@@ -124,4 +123,12 @@ body {
 #conIcon {
   height: 26px;
   width: 26px;
+}
+#gitIcon {
+  height: 32px;
+  width: 32px;
+}
+#linkIcon {
+  height: 32px;
+  width: 32px;
 }
