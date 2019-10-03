@@ -8,10 +8,10 @@ Linked 4 projects to the portfolio.  Added a neat navbar that appears when scrol
 # Getting started
 
 Use Gitbash to clone repo
-Go to my repo https://github.com/Zuprocj?tab=repositories and clone GifTastic repo or use this link to clone repo  
+Go to my repo https://github.com/Zuprocj?tab=repositories and clone updatedportfolio repo or use this link to clone repo  
 https://github.com/Zuprocj/updatedportfolio
 
-Also GifTasic is deployed onto Github Pages.
+Also updatedportfolio is deployed onto Github Pages.
 https://zuprocj.github.io/updatedportfolio/
 
 
