@@ -1,3 +1,6 @@
+10.16.2019
+**Updated the portfolio sections. added cards. Links to deployed page and github page where applicable. Re-did some of the anchor tags so that the page correctly displays each section. Removed home link from the nav bar. Thank you to TA Tassa for suggesting these changes.
+
 # Updated Portfolio
 
 Overhauled the the first porftolio assignment.  I made the website a one-pager instead of multiple pages. 
