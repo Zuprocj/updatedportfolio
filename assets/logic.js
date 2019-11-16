@@ -1,13 +1,3 @@
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-    document.getElementById("navbar").style.top = "0";
-  } else {
-    document.getElementById("navbar").style.top = "-200px";
-  }
-}
-
 var config = {
     apiKey: "AIzaSyCaqgVdaG2HOQB-uQZsuzVyPhRt6NywhMk",
     authDomain: "contact-7bdbb.firebaseapp.com",

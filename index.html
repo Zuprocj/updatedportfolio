@@ -9,35 +9,42 @@
 
   <title>Jeff Corpuz</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/styles.css" media="screen">
-
+  
 </head>
 
 <body>
 
 <!-- nav bar -->
-    <div id="navbar">
-        <div class="row">
-            <div class="col-xs-12 col-sm-5 col-lg-5">
-              <a href="#aboutMe">Profile</a>
-              <a href="#resume">Resume</a>
-              <a href="#portfolio">Portfolio</a>
-              <a href="#contact">Contact</a>
-            </div>
-        <div class="col-xs-12 col-sm-7 col-lg-7">
-          <a href="https://github.com/Zuprocj"><img id="proIcon" src="./assets/icons/svg/github.svg"></a>
-          <a href="https://www.linkedin.com/in/jeff-corpuz-343963185/"><img id="proIcon" src="./assets/icons/svg/linkedin.svg"></a>
-        </div>
-      </div>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#aboutMe">About me <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#resume">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+      </ul>
     </div>
+    <span class="navbar-text">
+        <a href="https://github.com/Zuprocj"><img id="proIcon" src="./assets/icons/svg/github.svg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://www.linkedin.com/in/jeff-corpuz-343963185/"><img id="proIcon" src="./assets/icons/svg/linkedin.svg"></a>
+    </span>
+  </nav>
+
   <!-- splash -->
 <div class="container-fluid border-bottom splash">
   <div class="row">
     <div class="col-xs col-md-5 col-lg-5">
-        <img src="./assets/images/profilepic.jpg" alt="profilepic" style="max-width:65%;height:auto;"/>
+        <img src="./assets/images/profilepic.jpg" alt="profilepic" style="max-width:50%;height:auto;"/>
     </div>
     <div class="col-xs col-md-7 col-lg-7">
       <ul id="links">
@@ -46,7 +53,7 @@
         <li style="list-style-type: none;"><a href="#resume"><img id="resIcon" src="./assets/icons/svg/document.svg">Resume</a><br></li>
         <li style="list-style-type: none;"><a href="#portfolio"><img id="folIcon" src="./assets/icons/svg/folder.svg">Portfolio</a><br></li>
         <li style="list-style-type: none;"><a href="#contact"><img id="conIcon" src="./assets/icons/svg/inbox.svg">Contact</a><br></li>
-        <a href="https://github.com/Zuprocj"><img id="gitIcon" src="./assets/icons/svg/github.svg"></a>
+        <a href="https://github.com/Zuprocj"><img id="gitIcon" src="./assets/icons/svg/github.svg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/jeff-corpuz-343963185/"><img id="linkIcon" src="./assets/icons/svg/linkedin.svg"></a>
       </ul>
     </div>
@@ -56,7 +63,7 @@
 <div class="container-fluid">
     <div id="aboutMe">
   <div class="header text-center border-bottom"><h2>Profile</h2>
-      <h6>a brief about me</h6>
+      <h6>a little about me</h6>
   </div>
 </div>
 <!-- about me -->
@@ -103,7 +110,7 @@
   <section class="content border-bottom padding-block">
     <div id="resume">
       <div class="header text-center border-bottom">
-        <h2>Resume</h2>
+          <h2>Resume</h2>
         <a href="./assets/images/Resume.pdf"  target="_blank" class="d-block">
         <h6>Download Full Resume click here</h6></a>
     </div>
@@ -150,7 +157,7 @@
   <section class="content border-bottom padding-block">
     <div id="portfolio">
       <div class="header text-center border-bottom">
-        <h2>Portfolio</h2>
+          <h2>Portfolio</h2>
       </div>
 <!-- portfolio links/pics -->
     <div class="row">
@@ -245,7 +252,7 @@
     <div class="col-xs col-sm">
       <div id="contact">
         <div class="header text-center border-bottom">
-        <h2>Contact</h2>
+            <br><br><h2>Contact</h2>
         </div>
       </div>
 <!-- contact form -->
@@ -269,10 +276,11 @@
 </div>
 </div>
 
-</body>
-<script type="text/javascript" src="./assets/logic.js"></script>
-<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
-
+<script type="text/javascript" src="./assets/logic.js"></script>
+</body>
 </html>

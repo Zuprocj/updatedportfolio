@@ -39,13 +39,14 @@ ul {
 .padding-block {
   padding-bottom: 15px
 }
+
 .content {
   padding: 48px 15px
 }
 
 .header {
-  padding: 30px 0px;
-  
+  margin-top: 40px;
+  padding: 30px 0px; 
 }
 .grayBlock {
   padding: 30px;
@@ -151,4 +152,13 @@ ul {
 }
 #contact {
   padding: 25px 0px;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	img { max-width: 100%; }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+	img { max-width: 100%; }
 }
