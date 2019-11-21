@@ -18,10 +18,11 @@
 
 <!-- nav bar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <a class="navbar-brand" href="#">Jeff Corpuz</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="#aboutMe">About me <span class="sr-only">(current)</span></a>
@@ -38,15 +39,16 @@
         <a href="https://github.com/Zuprocj"><img id="proIcon" src="./assets/icons/svg/github.svg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/jeff-corpuz-343963185/"><img id="proIcon" src="./assets/icons/svg/linkedin.svg"></a>
     </span>
-  </nav>
+</nav>
 
   <!-- splash -->
-<div class="container-fluid border-bottom splash">
-  <div class="row">
-    <div class="col-xs col-md-5 col-lg-5">
-        <img src="./assets/images/profilepic.jpg" alt="profilepic" style="max-width:50%;height:auto;"/>
-    </div>
-    <div class="col-xs col-md-7 col-lg-7">
+<div id="splash">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs col-md-5 col-lg-5">
+        <img src="./assets/images/profilepic.jpg" id="image" alt="profilepic" style="padding: 0px; width:100%; height:100%; object-fit: contain"/>
+      </div>
+      <div class="col-xs col-md-7 col-lg-7">
       <ul id="links">
         <br><br><br>
         <li style="list-style-type: none;"><a href="#aboutMe"><img id="proIcon" src="./assets/icons/svg/person.svg">Profile</a><br></li>
@@ -56,6 +58,7 @@
         <a href="https://github.com/Zuprocj"><img id="gitIcon" src="./assets/icons/svg/github.svg"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://www.linkedin.com/in/jeff-corpuz-343963185/"><img id="linkIcon" src="./assets/icons/svg/linkedin.svg"></a>
       </ul>
+      </div>
     </div>
   </div>
 </div>
@@ -161,7 +164,7 @@
       </div>
 <!-- portfolio links/pics -->
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="card">
               <img class="card-img-top" src="./assets/images/crystalcollector.png" alt="crsytal collector game">
               <div class="card-body">
@@ -172,7 +175,7 @@
               </div>
           </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="card">
               <img class="card-img-top" src="./assets/images/giftastic.png" alt="giftastic">
               <div class="card-body">
@@ -185,7 +188,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="card">
               <img class="card-img-top" src="./assets/images/trivia.png" alt="trivia">
               <div class="card-body">
@@ -196,7 +199,7 @@
               </div>
           </div>
       </div>
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <div class="card">
                 <img class="card-img-top" src="./assets/images/groupproject1.png" alt="Group Project 1">
                 <div class="card-body">
@@ -209,7 +212,7 @@
         </div>
       </div>
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="card">
               <img class="card-img-top" src="./assets/images/liri-node.png" alt="liri-node-app">
               <div class="card-body">
@@ -219,7 +222,7 @@
               </div>
           </div>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
           <div class="card">
               <img class="card-img-top" src="./assets/images/managerdisplay.png" alt="liri-node-app">
               <div class="card-body">
@@ -231,7 +234,7 @@
       </div>
       </div>
       <div class="row">
-        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
             <div class="card">
                 <img class="card-img-top" src="./assets/images/burger.png" alt="trivia">
                 <div class="card-body">
@@ -241,46 +244,31 @@
                 </div>
             </div>
         </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+          <div class="card">
+              <img class="card-img-top" src="./assets/images/burger.png" alt="trivia">
+              <div class="card-body">
+                <h5 class="card-title">Project 2 </h5>
+                <p class="card-text">Track search application using MySQL and MVC framework</p>
+                <a href="https://github.com/Zuprocj/Project2" target="_blank" class="btn btn-primary">GitHub page</a>
+              </div>
+          </div>
+      </div>
         </div>
-    </div>
     </div>
   </section>
-</div>
-<!-- contact header -->
-<div class="container-fluid">
-  <div class="row">
-    <div class="col-xs col-sm">
+    </div>
+    <div class="container-fluid">
       <div id="contact">
-        <div class="header text-center border-bottom">
-            <br><br><h2>Contact</h2>
-        </div>
-      </div>
-<!-- contact form -->
-      <form role="form">
-        <div class="form-group row">
-          <label for="name-input">Name</label>
-          <input type="tex" class="form-control" id="name-input" placeholder="Name">
-        </div>
-        <div class="form-group row">
-          <label for="Email-input">Email:</label>
-          <input type="email" class="form-control" id="email-input" placeholder="Email">
-        </div>
-        <div class="form-group row">
-          <label for="Messafe">Message</label>
-          <input type="text" class="form-control" id="name-input" placeholder="Leave a message">
-        </div>
-        <button class="btn btn-default" id="submit" type="submit">Submit</button>
-      </form>
+    <div class="header text-center border-bottom"><h2>Contact me:</h2>
+        <h6></h6>
     </div>
   </div>
-</div>
-</div>
+ 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
 <script type="text/javascript" src="./assets/logic.js"></script>
 </body>
 </html>

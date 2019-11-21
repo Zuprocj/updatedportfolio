@@ -71,46 +71,16 @@ ul {
   font-weight: 500;
 }
 
-.splash {
+#splash {
   background-color: #333;
 }
 #links {
+  float: right;
   font-size: xx-large;
   background-color: #333;
   color: white;
+  margin-right: 50px;
 }
-
-.imgPort {
-  height: 350px;
-  width: 350px;
-  padding: 10px 10px;
-  float: both;
-}
-
-#navbar {
-  background-color: #333; 
-  position: fixed;
-  top: -200px; 
-  width: 100%; 
-  transition: top 0.3s; 
-  z-index: 9999;
-}
-
-
-#navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  text-decoration: none;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .content {
   margin-top: 10px;
   padding-top: 10px;
@@ -154,11 +124,9 @@ ul {
   padding: 25px 0px;
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	img { max-width: 100%; }
-}
 
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-	img { max-width: 100%; }
+@media only screen and (max-width: 768px) { 
+  #splash{ 
+    display: none; 
+  } 
 }
