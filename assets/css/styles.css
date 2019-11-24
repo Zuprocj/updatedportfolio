@@ -2,6 +2,14 @@ html,
 body { height: 100%; 
   width: 100%;
   scroll-behavior: smooth;
+  background-image: url("./assets/images/graphy.png");
+}
+img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 .card {
   margin: 10px, 10px;
@@ -13,23 +21,6 @@ ul {
 }
 .text-right{
   text-align: right;
-}
-
-.black {
-  background-color: black;
-  color: blue;
-}
-
-.fill {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-}
-.fill img {
-  flex-shrink: 0;
-  max-width: 50%;
-  max-height: 50%
 }
 
 .border-bottom {
@@ -71,44 +62,14 @@ ul {
   font-weight: 500;
 }
 
-#splash {
-  background-color: #333;
-}
-#links {
-  float: right;
-  font-size: xx-large;
-  background-color: #333;
-  color: white;
-  margin-right: 50px;
-}
 .content {
   margin-top: 10px;
   padding-top: 10px;
 }
 
-#proIcon {
-  height: 26px;
-  width: 26px;
-}
-#resIcon {
-  height: 26px;
-  width: 26px;
-}
-#folIcon {
-  height: 26px;
-  width: 26px;
-}
-#conIcon {
-  height: 26px;
-  width: 26px;
-}
 #gitIcon {
-  height: 32px;
-  width: 32px;
-}
-#linkIcon {
-  height: 32px;
-  width: 32px;
+  height: 50px;
+  width: 50px;
 }
 
 #aboutMe {
@@ -123,7 +84,6 @@ ul {
 #contact {
   padding: 25px 0px;
 }
-
 
 @media only screen and (max-width: 768px) { 
   #splash{ 
