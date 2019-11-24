@@ -24,5 +24,4 @@ https://zuprocj.github.io/updatedportfolio/
 HTML
 CSS 
 jQuery
-Firebase
 VSCode
